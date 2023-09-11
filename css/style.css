@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../Raleway-ExtraBold.ttf);
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.description-inner {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.description-inner i {
+  color: orangered;
+}
+
+.description-inner h1 {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Raleway-Bold;
+  letter-spacing: 1px;
+}
+
+.description-inner p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.description-inner ul {
+  list-style-type: circle;
+  padding: 0 10px;
+}
+
+.description-inner ul li {
+  margin: 40px 0;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.description-inner ul li strong {
+  font-family: Raleway-Bold;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.description-inner img {
+  border: 10px solid #ccc;
+  cursor: pointer;
+}
